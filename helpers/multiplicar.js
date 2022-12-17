@@ -11,14 +11,11 @@ const crearArchivoDeTabla = async(Num, List, Hasta) => {
 
         for(let i = 1; i <= tope; i++){
             //Generador para el Archivo de texto
-            if (i == 1){
-                Txt += `===============\n Tabla del ${Num} \n===============\n`
-            }
+            if (i == 1) Txt += `===============\n Tabla del ${Num} \n===============\n`
             Txt += ` ${Num} x ${i} = ${Num * i}\n`
+            
             //Generador para la consola
-            if (i == 1){
-                Consola += `===============\n Tabla del ${Num} \n===============\n`.rainbow
-            }
+            if (i == 1) Consola += `===============\n Tabla del ${Num} \n===============\n`.rainbow
             Consola += ` ${Num} x ${i} = ${Num * i}\n`.yellow
         }
         //Callback de retorno cuando todo termine
