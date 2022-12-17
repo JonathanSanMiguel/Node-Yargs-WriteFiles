@@ -1,0 +1,15 @@
+{
+  "name": "basesdenode",
+  "version": "1.0.0",
+  "description": "Tabla de multiplicar",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --base=9"
+  },
+  "author": "Jonathan",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.6.2"
+  }
+}
